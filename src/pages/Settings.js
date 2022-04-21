@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 
 const styles = {
+    wrapper: {
+        width: '100%',
+    },
     formContainer: {
         width: 'fit-content',
         margin: '0 auto',
@@ -19,12 +22,13 @@ const styles = {
         color: 'grey'
     },
     field: {
+        height: '1.5rem',
         margin: '.5rem'
     },
     button: {
         border: 'none',
         borderRadius: '3px',
-        backgroundColor: '#F14C25',
+        backgroundColor: '#000',
         padding: '.5rem .75rem',
         fontSize: '1rem',
         color: '#FEF8F0'
@@ -38,6 +42,7 @@ const styles = {
         fontSize: '1rem',
         textAlign: 'center'
     },
+  
 }
 
 function Settings() {
@@ -69,7 +74,7 @@ function Settings() {
                         <legend>Login</legend>
                         <div style={styles.field}>
                             <label style={styles.formLabel}>Username: </label>
-                            <input type='text' defaultValue={userData.login.username} />
+                            <input style={styles.input} type='text' defaultValue={userData.login.username} />
                         </div>
                         <div style={styles.field}>
                             <label style={styles.formLabel}>Password: </label>

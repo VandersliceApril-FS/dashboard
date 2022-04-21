@@ -6,15 +6,13 @@ import { RiUser3Fill } from "react-icons/ri"
 
 const styles = {
     navigation: {
-        position: 'absolute',
         width: 'fit-content',
+        margin: '0 auto',
         height: '25rem',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-around',
+        justifyContent: 'center',
+        
     },
     menuItem: {
         textAlign: 'start',
@@ -54,33 +52,6 @@ const Nav = () => {
                 >
                 <AiFillPieChart style={styles.icon}/>
                 Chart
-            </NavLink>
-            <NavLink to='/Form' 
-                style={styles.menuItem}
-                activeStyle={{
-                    color: '#5ef38c'
-                }}
-            >
-                <AiFillEdit style={styles.icon}/>
-                Form
-            </NavLink>
-            <NavLink to='/Email' 
-                style={styles.menuItem}
-                activeStyle={{
-                    color: '#5ef38c'
-                }}
-                >
-                <AiTwotoneMail style={styles.icon}/>
-                Email
-            </NavLink>
-            <NavLink  to='/Profile' 
-                style={styles.menuItem}
-                activeStyle={{
-                    color: '#5ef38c'
-                }}
-                >
-                <RiUser3Fill style={styles.icon}/>
-                Profile
             </NavLink>
             <NavLink to='/Settings' 
                 style={styles.menuItem}
